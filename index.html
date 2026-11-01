@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>barmharhonghok </title>
+<title>barmharhonghok</title>
 
 <style>
 
@@ -24,11 +24,11 @@ body {
 
   padding: 15px 15px 100px;
 
-  background: linear-gradient(135deg,#fceaf1,#e6f3e9);
+  background: linear-gradient(135deg,#fff3b8,#e2f0c9);
 
   font-family: Arial, sans-serif;
 
-  color: #425b4a;
+  color: #52634a;
 
 }
 
@@ -50,6 +50,8 @@ header {
 
   padding: 15px 5px 25px;
 
+  gap: 10px;
+
 }
 
 .logo {
@@ -60,7 +62,7 @@ header {
 
   font-weight: bold;
 
-  color: #54755e;
+  color: #66804e;
 
 }
 
@@ -72,9 +74,9 @@ a {
 
 .facebook {
 
-  background: #f7dce8;
+  background: #edf2c9;
 
-  color: #a45e7d;
+  color: #687d4d;
 
   padding: 10px 15px;
 
@@ -98,30 +100,9 @@ a {
 
   border-radius: 25px;
 
-  padding: 30px 22px;
-
-  border: 1px solid #e8dce1;
+  border: 1px solid #e1e8c8;
 
   margin-bottom: 18px;
-}
-
-.hero h1 {
-
-  font-family: Georgia,serif;
-
-  font-size: 43px;
-
-  color: #64866d;
-
-  margin: 15px 0;
-
-}
-
-.hero p {
-
-  line-height: 1.8;
-
-  color: #78877d;
 
 }
 
@@ -135,13 +116,13 @@ a {
 
   margin-bottom: 18px;
 
-  border: 1px solid #dce9df;
+  border: 1px solid #e3ebd2;
 
 }
 
 .section h2 {
 
-  color: #63836b;
+  color: #718b55;
 
   font-family: Georgia,serif;
 
@@ -169,32 +150,6 @@ a {
 
 }
 
-input {
-
-  width: 100%;
-
-  padding: 14px;
-
-  border: 1px solid #d9e5dc;
-
-  border-radius: 13px;
-
-  margin: 7px 0 15px;
-
-  font-size: 14px;
-
-  background: #fffdfd;
-
-}
-
-label {
-
-  font-size: 13px;
-
-  font-weight: bold;
-
-}
-
 button {
 
   cursor: pointer;
@@ -207,19 +162,81 @@ button {
 
   font-weight: bold;
 
+  font-size: 14px;
+
 }
 
 .save {
 
-  background: #dceee1;
+  background: #e5efc9;
 
-  color: #52745b;
+  color: #607b48;
+
+}
+
+.account-box {
+
+  background: #fbfbea;
+
+  border: 1px solid #e5eacb;
+
+  border-radius: 17px;
+
+  padding: 18px;
+
+  margin-top: 18px;
+
+}
+
+.account-box p {
+
+  color: #89968d;
+
+  font-size: 13px;
+
+  margin: 0 0 5px;
+
+}
+
+.account-box h3 {
+
+  color: #607b48;
+
+  font-size: 16px;
+
+  margin: 5px 0 18px;
+
+  overflow-wrap: anywhere;
+
+}
+
+.copy-row {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+
+}
+
+.copy-row strong {
+
+  font-size: 17px;
+
+  color: #607b48;
+
+  overflow-wrap: anywhere;
 
 }
 
 .qr {
 
-  border: 2px dashed #c6ddcb;
+  border: 2px dashed #cbdcb1;
 
   border-radius: 18px;
 
@@ -237,13 +254,29 @@ button {
 
   text-align: center;
 
+  background: #fffef5;
+
 }
 
 .qr img {
 
   max-width: 100%;
 
-  max-height: 300px;
+  max-height: 360px;
+
+  object-fit: contain;
+
+}
+
+.review {
+
+  text-align: center;
+
+  padding: 35px 10px;
+
+  border: 1px dashed #d9e5dc;
+
+  border-radius: 18px;
 
 }
 
@@ -287,21 +320,9 @@ button {
 
 .tab.active {
 
-  background: #dceee1;
+  background: #e5efc9;
 
-  color: #4f765b;
-
-}
-
-.review {
-
-  text-align: center;
-
-  padding: 35px 10px;
-
-  border: 1px dashed #d9e5dc;
-
-  border-radius: 18px;
+  color: #607b48;
 
 }
 
@@ -327,7 +348,7 @@ footer {
 
 <header>
 
-  <div class="logo">barmharhonghok </div>
+  <div class="logo">barmharhonghok</div>
 
   <a class="facebook"
 
@@ -345,23 +366,7 @@ footer {
 
 <div class="page active" id="main">
 
-  <div class="hero">
-
-    <p>WELCOME TO</p>
-
-    <h1>barmharhonghok </h1>
-
-    <p>
-
-      สวัสดีลูกค้าทุกคนนะคะ <br>
-
-      ยินดีต้อนรับเข้าสู่ร้านของพวกเรา
-
-      
-
-    </p>
-
-  </div>
+  <div class="hero"></div>
 
   <div class="section">
 
@@ -441,49 +446,71 @@ footer {
 
     </p>
 
-    <label>ชื่อธนาคาร</label>
+    <div class="account-box">
 
-    <input id="bank" placeholder="กรอกชื่อธนาคาร">
+      <p>ชื่อธนาคาร</p>
 
-    <label>ชื่อบัญชี</label>
+      <h3>ธนาคารกสิกรไทย</h3>
 
-    <input id="owner" placeholder="กรอกชื่อเจ้าของบัญชี">
+      <p>ชื่อบัญชี</p>
 
-    <label>เลขบัญชี</label>
+      <h3>กรุณาใส่ชื่อเจ้าของบัญชี</h3>
 
-    <input id="number" placeholder="กรอกเลขบัญชี">
+      <p>เลขบัญชี</p>
 
-   
+      <div class="copy-row">
 
-      บันทึกข้อมูล 
+        <strong id="accountNumber">
 
-    </button>
+          กรุณาใส่เลขบัญชี
 
-    <p class="small" id="status"></p>
+        </strong>
+
+        <button class="save"
+
+                type="button"
+
+                onclick="copyAccount()">
+
+          ▢ คัดลอก
+
+        </button>
+
+      </div>
+
+      <p class="small" id="copyStatus"></p>
+
+    </div>
 
   </div>
 
   <div class="section">
 
-    <h2>QR Code </h2>
+    <h2>QR Code</h2>
 
-    <div class="qr" id="qr">
+    <div class="qr">
 
-      <p class="small">เพิ่มรูป QR Code ของร้านที่นี่</p>
+      <img src="qrcode.png"
+
+           alt="QR Code สำหรับชำระเงิน"
+
+           onerror="this.style.display='none';
+
+           document.getElementById('qrHint').style.display='block';">
+
+      <p class="small" id="qrHint" style="display:none;">
+
+        กรุณาอัปโหลดรูป QR Code ชื่อ qrcode.png
+
+        ไว้ในโฟลเดอร์เดียวกับ index.html
+
+      </p>
 
     </div>
 
-    <label>อัปโหลดรูป QR Code</label>
-
-    <input type="file"
-
-           id="qrFile"
-
-           accept="image/*">
-
     <p class="small">
 
-      เลือกรูป QR Code จากอุปกรณ์ของคุณ
+      ลูกค้าสามารถสแกน QR Code เพื่อชำระเงินได้ค่ะ
 
     </p>
 
@@ -493,7 +520,7 @@ footer {
 
 <footer>
 
-barmharhonghok
+  barmharhonghok
 
 </footer>
 
@@ -515,7 +542,7 @@ barmharhonghok
 
           onclick="changePage('reviews',this)">
 
-     Reviews
+    Reviews
 
   </button>
 
@@ -551,83 +578,53 @@ function changePage(page,button) {
 
 }
 
-// บันทึกข้อมูลบัญชี
+async function copyAccount() {
 
-function saveAccount() {
+  const number = document
 
-  const data = {
+    .getElementById('accountNumber')
 
-    bank: document.getElementById('bank').value,
+    .innerText.trim();
 
-    owner: document.getElementById('owner').value,
+  const status = document.getElementById('copyStatus');
 
-    number: document.getElementById('number').value
+  if (!number || number === 'กรุณาใส่เลขบัญชี') {
 
-  };
+    status.innerText = 'กรุณาใส่เลขบัญชีจริงก่อนนะคะ';
 
-  localStorage.setItem(
+    return;
 
-    'shopAccount',
+  }
 
-    JSON.stringify(data)
+  try {
 
-  );
+    await navigator.clipboard.writeText(number);
 
-  document.getElementById('status').innerText =
+    status.innerText = 'คัดลอกเลขบัญชีเรียบร้อยแล้ว ♡';
 
-    'บันทึกข้อมูลเรียบร้อยแล้ว ';
+  } catch (error) {
+
+    const temp = document.createElement('textarea');
+
+    temp.value = number;
+
+    document.body.appendChild(temp);
+
+    temp.select();
+
+    const copied = document.execCommand('copy');
+
+    temp.remove();
+
+    status.innerText = copied
+
+      ? 'คัดลอกเลขบัญชีเรียบร้อยแล้ว ♡'
+
+      : 'กรุณากดค้างที่เลขบัญชีเพื่อคัดลอก';
+
+  }
 
 }
-
-// โหลดข้อมูลบัญชีเดิม
-
-const saved = JSON.parse(
-
-  localStorage.getItem('shopAccount') || 'null'
-
-);
-
-if(saved) {
-
-  document.getElementById('bank').value = saved.bank || '';
-
-  document.getElementById('owner').value = saved.owner || '';
-
-  document.getElementById('number').value = saved.number || '';
-
-}
-
-// อัปโหลด QR Code
-
-document.getElementById('qrFile')
-
-.addEventListener('change', function(e) {
-
-  const file = e.target.files[0];
-
-  if(!file) return;
-
-  const reader = new FileReader();
-
-  reader.onload = function(event) {
-
-    const img = document.createElement('img');
-
-    img.src = event.target.result;
-
-    img.alt = 'QR Code';
-
-    const qr = document.getElementById('qr');
-
-    qr.innerHTML = '';
-
-    qr.appendChild(img);
-
-  };
-
-  reader.readAsDataURL(file);
-
-});
 
 </script>
 
