@@ -1,3 +1,5 @@
+ฃ
+
 <!DOCTYPE html>
 
 <html lang="th">
@@ -12,11 +14,7 @@
 
 <style>
 
-* {
-
-  box-sizing: border-box;
-
-}
+* { box-sizing: border-box; }
 
 body {
 
@@ -66,11 +64,7 @@ header {
 
 }
 
-a {
-
-  text-decoration: none;
-
-}
+a { text-decoration: none; }
 
 .facebook {
 
@@ -138,17 +132,9 @@ a {
 
 }
 
-.page {
+.page { display: none; }
 
-  display: none;
-
-}
-
-.page.active {
-
-  display: block;
-
-}
+.page.active { display: block; }
 
 button {
 
@@ -265,6 +251,28 @@ button {
   max-height: 360px;
 
   object-fit: contain;
+
+}
+
+.save-qr {
+
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+  background: #e5efc9;
+
+  color: #607b48;
+
+  padding: 14px;
+
+  border-radius: 15px;
+
+  font-weight: bold;
+
+  margin: 12px 0;
 
 }
 
@@ -484,13 +492,17 @@ footer {
 
   </div>
 
+  <!-- QR CODE -->
+
   <div class="section">
 
     <h2>QR Code</h2>
 
     <div class="qr">
 
-      <img src="qrcode.png"
+      <img id="qrImage"
+
+           src="qrcode.png"
 
            alt="QR Code สำหรับชำระเงิน"
 
@@ -508,9 +520,21 @@ footer {
 
     </div>
 
+    <a class="save-qr"
+
+       href="qrcode.png"
+
+       download="barmharhonghok-QR.png">
+
+       ♡ บันทึกรูป QR Code
+
+    </a>
+
     <p class="small">
 
-      ลูกค้าสามารถสแกน QR Code เพื่อชำระเงินได้ค่ะ
+      สามารถบันทึกรูป QR Code ไว้ในเครื่อง
+
+      เพื่อใช้สแกนชำระเงินได้ค่ะ
 
     </p>
 
